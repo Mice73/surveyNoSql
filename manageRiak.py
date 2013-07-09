@@ -65,8 +65,9 @@ class ManageRiak():
     return self.rc
 
 def main():
-  print "main"
-
+  myLogger = logging.getLogger("Manage Riak")
+  mr = ManageRiak(myLogger)
+  print mr
 
 if __name__ == "__main__":
   main()
